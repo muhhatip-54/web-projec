@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Şehri </title>
+
+ <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+ </style>
+</head>
+
+<body>
+
+    <h1>Kafranbel Şehri Hakkında </h1>
+    <hr>
+    <div class="section" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Konum:</h2>
+            <p>
+                Kafranbel, Suriye'nin kuzeybatısında, İdlib iline bağlıdır.<br> Özellikle Cebel el-Zaviye bölgesinde yer
+                alır
+                ve İdlib şehir merkezine yaklaşık 35 km uzaklıktadır. <br>Bu konum, onu hem tarihi hem de stratejik
+                açıdan önemli kılar.
+            </p>
+        </div>
+        <img src="resimler/5.jpg" alt="Harita"
+            style="width: 400px; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+
+    <hr>
+
+    <div class="section" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Genel Bilgi:</h2>
+            <p>Kafranbel, tarihi çok eskilere dayanan bir şehirdir. Roma ve Bizans dönemlerine ait olduğu düşünülen
+                kilise
+                kalıntıları ve tarihi yapılar bulunmaktadır. On binlerce kişilik nüfusuyla bölgedeki önemli ticaret ve
+                tarım
+                merkezlerinden biridir.</p>
+        </div>
+        <img src="resimler/şehir10.jpg" alt="Harita"
+            style="width: 400px; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+
+    <hr>
+
+
+    <div class="section" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Neyle Meşhur:</h2>
+            <p>Kafranbel, Suriye devrimi sırasında dünya çapında ün kazandı. Şehirdeki aktivistlerin hazırladığı mizahi
+                ve
+                politik karikatürlerle dolu pankartlar uluslararası medyada büyük ilgi gördü. Bu pankartlar sanatsal
+                zekâ ve
+                güçlü mesajlarıyla dikkat çekti.</p>
+        </div>
+        <img src="resimler/Mozaik sanatı7.jpg" alt="Harita"
+            style="width: 400px; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+
+    <hr>
+
+
+    <div class="section" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Kültür ve Miras:</h2>
+            <p>Kafranbel, özellikle incir ve zeytin tarımıyla tanınır. Halkı geleneksel kıyafetleri, sosyal etkinlikleri
+                ve
+                misafirperverlikleriyle bilinir. Şehirdeki eski Roma ve Bizans kalıntıları, onun köklü tarihini
+                yansıtır.
+            </p>
+        </div>
+        <img src="resimler/7.jpg" alt="Harita"
+            style="width: 400px; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+    <hr>
+    <div class="section" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Güncel Durum:</h2>
+            <p>Son yıllarda şehir, savaşın etkisiyle ciddi yıkıma uğradı. Pek çok sakin, bombardıman ve askeri
+                operasyonlar
+                nedeniyle göç etmek zorunda kaldı. Ancak Kafranbel, Suriye'de sivil direnişin ve özgür sesin simgesi
+                olmaya
+                devam etmektedir.</p>
+        </div>
+        <img src="resimler/şehir9.jpg" alt="Harita"
+            style="width: 400px; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+    </div>
+    <hr>
+
+    <h2> SLIDER </h2>
+
+    <div class="slider">
+        <div class="slides">
+            <a href="/sehir_ilgili/eski Roma.html"><img src="/resimler/serjilla.jpeg" class="slide active"></a>
+            <a href="/sehir_ilgili/muzayik.html"><img src="/resimler/muzayik22.jpg" class="slide"></a>
+            <a href="/sehir_ilgili/yemek.html"><img src="/resimler/yemek22.jpg" class="slide"></a>
+            <a href="/sehir_ilgili/zeytin.html"><img src="/resimler/zeytin22.jpg" class="slide"></a>
+        </div>
+
+        <button class="nav prev" onclick="prevSlide()">&#10094;</button>
+        <button class="nav next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
