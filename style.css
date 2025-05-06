@@ -1,0 +1,89 @@
+/**************************************************************************************************************************/
+/********************************************************şehir****************************************************************/
+
+
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   padding: 20px;
+   line-height: 1.6;
+   margin: 0;
+}
+
+h1,
+h2 {
+   color: #2c3e50;
+}
+
+
+hr {
+   margin: 40px 0;
+   border: none;
+   border-top: 2px solid #ccc;
+}
+
+.section {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+
+.section img {
+   width: 400px;
+   height: auto;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+}
+
+.slider {
+   position: relative;
+   max-width: 800px;
+   margin: 50px auto;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.slides {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+   min-width: 100%;
+   display: none;
+}
+
+.slide.active {
+   display: block;
+}
+
+.nav {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.4);
+   border: none;
+   color: white;
+   font-size: 30px;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.prev {
+   left: 10px;
+}
+
+.next {
+   right: 10px;
+}
+
+.nav:hover {
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+
