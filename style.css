@@ -1,151 +1,83 @@
 /**************************************************************************************************************************/
-/********************************************************şehir****************************************************************/
+/********************************************************index****************************************************************/
 
 
+.index-style {
 
-body {
-   font-family: 'Arial', sans-serif;
-   background-color: #f4f4f4;
-   color: #333;
-   padding: 20px;
-   line-height: 1.6;
-   margin: 5px;
+  margin: 10px;
+  height: 100px;
+  background: url("backgiris.png") center/cover no-repeat fixed;
+  display: flex;
+}
+
+.btn-buyukluk {
+  width: 150px;
+}
+
+.btn-mesafe {
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}
+
+/**************************************************************************************************************************/
+/********************************************************hakiimda****************************************************************/
+hakkımda-style {
+  background-color: #f8f9fa;
 }
 
 h1,
 h2 {
-   color: #2c3e50;
+  font-weight: bold;
 }
 
-
-hr {
-   margin: 40px 0;
-   border: none;
-   border-top: 2px solid #ccc;
-}
-
-.section {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 20px;
-}
-
-
-.section img {
-   width: 400px;
-   height: auto;
-   border: 1px solid #ccc;
-   border-radius: 8px;
-}
-
+/**************************************************************************************************************************/
+/********************************************************sehir****************************************************************/
 .slider {
-   position: relative;
-   max-width: 800px;
-   margin: 50px auto;
-   overflow: hidden;
-   border-radius: 10px;
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .slides {
-   display: flex;
-   transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-   min-width: 100%;
-   display: none;
+  min-width: 100%;
+  display: none;
 }
 
 .slide.active {
-   display: block;
+  display: block;
 }
 
 .nav {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgba(0, 0, 0, 0.4);
-   border: none;
-   color: white;
-   font-size: 30px;
-   padding: 10px;
-   cursor: pointer;
-   z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(28, 22, 22, 0.4);
+  border: none;
+  color: rgb(17, 16, 16);
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .prev {
-   left: 10px;
+  left: 10px;
 }
 
 .next {
-   right: 10px;
+  right: 10px;
 }
 
 .nav:hover {
-   background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
-
-
-.............................
-<style>
-    
-    body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.8;
-        }
-
-        header,
-        section,
-        article,
-        footer {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .image-text-left {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        .image-text-left img {
-            max-width: 200px;
-            border-radius: 10px;
-        }
-
-        .image-text-left div {
-            flex: 1;
-        }
-
-        .image-text-right {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            flex-direction: row-reverse;
-        }
-
-        .image-text-right img {
-            max-width: 200px;
-            border-radius: 10px;
-        }
-
-        .image-text-right div {
-            flex: 1;
-        }
-
-
-        h2 {
-            color: #005f73;
-        }
-</style>
-
-
-
-
+/**************************************************************************************************************************/
+/********************************************************hakiimda****************************************************************/
