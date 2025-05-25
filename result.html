@@ -14,19 +14,38 @@
 </div>
 
 <script>
-const params = new URLSearchParams(window.location.search);
-const out = document.getElementById('out');
-if([...params].length===0){
-  out.innerHTML='<p class="text-danger">Veri bulunamadı.</p>';
-}else{
-  for(const [k,v] of params){
-    const label = k.charAt(0).toUpperCase()+k.slice(1);
-    const item = document.createElement('div');
-    item.className='list-group-item';
-    item.innerHTML=`<strong>${label}:</strong> ${v}`;
-    out.appendChild(item);
+  const params = new URLSearchParams(window.location.search);
+  const out = document.getElementById('out');
+
+  const wantedFields = ["name", "email", "phone", "topic", "gender", "message", "cookie"];
+  const labels = {
+    name: "Ad Soyad",
+    email: "E‑posta",
+    phone: "Telefon",
+    topic: "Konu",
+    gender: "Cinsiyet",
+    message: "Mesaj",
+    cookie: "Çerez Onayı"
+  };
+
+  let hasData = false;
+
+  for (const key of wantedFields) {
+    const value = params.get(key);
+    if (value !== null) {
+      const item = document.createElement('div');
+      item.className = 'list-group-item';
+      const displayValue = (key === "cookie") ? (value === "true" ? "Evet" : "Hayır") : value;
+      item.innerHTML = `<strong>${labels[key]}:</strong> ${displayValue}`;
+      out.appendChild(item);
+      hasData = true;
+    }
   }
-}
+
+  if (!hasData) {
+    out.innerHTML = '<p class="text-danger">Veri bulunamadı.</p>';
+  }
 </script>
+
 </body>
 </html>
